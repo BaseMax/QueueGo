@@ -20,6 +20,7 @@ func NewQueue() *Queue {
 }
 
 // add item to queue
+// O(1)
 func (q *Queue) Enqueue(i int) {
 	if q.IsFull() {
 		return
@@ -29,6 +30,7 @@ func (q *Queue) Enqueue(i int) {
 }
 
 // remove item from queue
+// O(1)
 func (q *Queue) Dequeue() int {
 	if q.IsEmpty() {
 		return -1
@@ -39,21 +41,25 @@ func (q *Queue) Dequeue() int {
 }
 
 // check if queue is empty
+// O(1)
 func (q *Queue) IsEmpty() bool {
 	return q.rear == q.front
 }
 
 // check if queue is full
+// O(1)
 func (q *Queue) IsFull() bool {
 	return q.rear == len(q.items)
 }
 
 // get size of queue
+// O(1)
 func (q *Queue) Size() int {
 	return q.rear - q.front
 }
 
 // get front item of queue
+// O(1)
 func (q *Queue) Front() int {
 	if q.rear == q.front {
 		return -1
@@ -62,6 +68,7 @@ func (q *Queue) Front() int {
 }
 
 // get rear item of queue
+// O(1)
 func (q *Queue) Rear() int {
 	if q.rear == q.front {
 		return -1
