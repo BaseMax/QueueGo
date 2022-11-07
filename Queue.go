@@ -5,13 +5,18 @@
  * @Class: Data Structure, Dr. Mahsa Soheil Shamaee
  * @Repository: https://github.com/basemax/QueueGo
  */
-package Queue
+package main
 
 // type for queue
 type Queue struct {
 	rear  int
 	front int
 	items []int
+}
+
+// create new queue
+func NewQueue() *Queue {
+	return &Queue{rear: 0, front: 0, items: []int{}}
 }
 
 // add item to queue

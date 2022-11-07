@@ -7,35 +7,56 @@ func main() {
 	fmt.Print("Hello, world.\n")
 
 	// create new queue
-	q := Queue{}
+	q := NewQueue()
 
 	// add items to queue
 	q.Enqueue(1)
-	q.Enqueue(2)
-	q.Enqueue(3)
-	q.Enqueue(4)
 
-	// print front item
-	println(q.Front())
+	// check if queue is empty
+	fmt.Printf("Is queue empty? %v\n", q.IsEmpty())
 
-	// print rear item
-	println(q.Rear())
+	// check if queue is full
+	fmt.Printf("Is queue full? %v\n", q.IsFull())
 
-	// print size of queue
-	println(q.Size())
+	// get size of queue
+	fmt.Printf("Size of queue: %v\n", q.Size())
 
-	// print if queue is empty
-	println(q.IsEmpty())
+	// get front item of queue
+	fmt.Printf("Front item of queue: %v\n", q.Front())
 
-	// print if queue is full
-	println(q.IsFull())
+	// get rear item of queue
+	fmt.Printf("Rear item of queue: %v\n", q.Rear())
 
-	// remove items from queue
-	println(q.Dequeue())
-	println(q.Dequeue())
-	println(q.Dequeue())
-	println(q.Dequeue())
+	// remove item from queue
+	fmt.Printf("Removed item from queue: %v\n", q.Dequeue())
 
-	// print if queue is empty
-	println(q.IsEmpty())
+	// check if queue is empty
+	fmt.Printf("Is queue empty? %v\n", q.IsEmpty())
+
+	// check if queue is full
+	fmt.Printf("Is queue full? %v\n", q.IsFull())
+
+	// get size of queue
+	fmt.Printf("Size of queue: %v\n", q.Size())
+
+	// get front item of queue
+	fmt.Printf("Front item of queue: %v\n", q.Front())
+
+	// get rear item of queue
+	fmt.Printf("Rear item of queue: %v\n", q.Rear())
+
+	// remove item from queue
+	fmt.Printf("Removed item from queue: %v\n", q.Dequeue())
+
+	// check if queue is empty
+	fmt.Printf("Is queue empty? %v\n", q.IsEmpty())
+
+	// check if queue is full
+	fmt.Printf("Is queue full? %v\n", q.IsFull())
+
+	// get size of queue
+	fmt.Printf("Size of queue: %v\n", q.Size())
+
+	// get front item of queue
+	fmt.Printf("Front item of queue: %v\n", q.Front())
 }
