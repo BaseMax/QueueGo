@@ -21,13 +21,16 @@ func NewQueue() *Queue {
 
 // add item to queue
 func (q *Queue) Enqueue(i int) {
+	if q.IsFull() {
+		return
+	}
 	q.items = append(q.items, i)
 	q.rear++
 }
 
 // remove item from queue
 func (q *Queue) Dequeue() int {
-	if q.rear == q.front {
+	if q.IsEmpty() {
 		return -1
 	}
 	item := q.items[q.front]
