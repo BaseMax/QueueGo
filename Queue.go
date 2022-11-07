@@ -2,7 +2,6 @@
  * @Name: Queue Go
  * @Author: Max Base
  * @Date: 2022-11-07
- * @Class: Data Structure, Dr. Mahsa Soheil Shamaee
  * @Repository: https://github.com/basemax/QueueGo
  */
 package main
